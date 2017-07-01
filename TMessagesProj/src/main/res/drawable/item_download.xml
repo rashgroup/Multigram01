@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView app:id="@id/cardView" app:layout_width="fill_parent" app:layout_height="wrap_content" app:layout_margin="4.0dip" myApp:cardElevation="4.0dip" xmlns:myApp="http://schemas.android.com/apk/res-auto"
+  xmlns:app="http://schemas.android.com/apk/res/android">
+    <RelativeLayout app:padding="8.0dip" app:layout_width="fill_parent" app:layout_height="wrap_content">
+        <com.rey.material.widget.ProgressView app:id="@id/progressView" app:layout_width="20.0dip" app:layout_height="20.0dip" myApp:pv_circular="true" />
+        <com.rey.material.widget.CheckBox app:gravity="center" app:id="@id/checkBox" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="2.0dip" app:layout_below="@id/progressView" app:layout_alignBottom="@id/linearLayout" app:layout_alignParentLeft="true" />
+        <LinearLayout app:orientation="vertical" app:id="@id/linearLayout" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_toLeftOf="@id/linear" app:layout_toRightOf="@id/checkBox" app:layout_centerInParent="true" app:layout_centerVertical="true">
+            <LinearLayout app:orientation="horizontal" app:paddingLeft="5.0dip" app:paddingRight="5.0dip" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <TextView app:textSize="12.0sp" app:textColor="#ff0d0045" app:id="@id/text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="4.0dip" app:text="0MB" />
+                <TextView app:textSize="12.0sp" app:textColor="#ff0d0045" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="4.0dip" app:text="/" />
+                <TextView app:textSize="12.0sp" app:textColor="#ff0d0045" app:id="@id/text2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="0MB" />
+                <View app:layout_width="0.0dip" app:layout_height="1.0dip" app:layout_weight="1.0" />
+                <TextView app:textSize="12.0sp" app:textColor="#ff0d0045" app:id="@id/text3" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="0%" />
+            </LinearLayout>
+            <ProgressBar app:layout_gravity="bottom|center" app:id="@id/pProgressBar" app:layout_width="fill_parent" app:layout_height="wrap_content" app:layout_marginTop="5.0dip" app:maxHeight="10.0dip" app:max="100" app:progress="1" app:indeterminate="false" app:minHeight="10.0dip" style="?android:attr/progressBarStyleHorizontal" />
+            <LinearLayout app:orientation="horizontal" app:paddingLeft="5.0dip" app:paddingTop="10.0dip" app:paddingRight="5.0dip" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <TextView app:textSize="12.0sp" app:textColor="#ff0d0045" app:id="@id/text4" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="file name" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout app:gravity="center" app:orientation="vertical" app:id="@id/linear" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="2.0dip" app:layout_marginRight="2.0dip" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+            <ImageView app:id="@id/img" app:padding="5.0dip" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/pl_play" />
+            <ImageView app:layout_gravity="bottom|center" app:id="@id/img2" app:padding="5.0dip" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="15.0dip" app:src="@drawable/ic_ab_fwd_delete" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
